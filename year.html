@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+.finder{
+color: purple;
+margin:20px;
+padding:10px;
+}
+</style>
+<style>
+.findd{
+margin:20px;
+padding:10px;
+}
+</style>
+<div class="finder">
+<h1>Birth Year Finder</h1>
+<h4>Enter Your Age</h4>
+
+<input id="in" type="text"><br>
+</div>
+<div class="findd">
+<button onclick="find()">Find</button>
+</div>
+<p id="demo"></p>
+<script>
+function find()
+{
+var inp=document.getElementById("in").value;
+var curr=new Date();
+var current=curr.getFullYear();
+var year=current-inp;
+document.getElementById("demo").innerHTML=year;
+}
+</script>
+</body>
+</html>
